@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace oef_09
@@ -25,11 +26,40 @@ namespace oef_09
             //gevonden waarde verwijderd
 
 
+            int[] getallenArray = new int[10];
 
+            //=================================================================================code autogenerator
 
-            
+            SetArrayMetRandomInts(getallenArray, 1, 20);
+            for (int i = 0; i < getallenArray.Length; i++) Console.WriteLine($"getal {i + 1}: {getallenArray[i]}");
+
         }
+        //==========================================================================================================
+        /// <summary>
+        /// Deze methode initialiseerd een array met  random integers
+        /// </summary>
+        static void RemoveFirstValueAndsetLastOnMinOne(int[] arrayVanIntegers, int waarde)
+        {
 
+            for (int i = 0; i < arrayVanIntegers.Length; i++) { 
+
+            }
+                
+
+        }
+        //==========================================================================================================
+        /// <summary>
+        /// Deze methode initialiseerd een array met  random integers
+        /// </summary>
+        static void SetArrayMetRandomInts(int[] arrayVanIntegers, int onderInclusief, int bovenInclusief)
+        {
+            Thread.Sleep(1); //anders genereerd deze 2 dezelfde arrays als je deze methode snel achter mekaar uitvoerd
+            Random r = new Random();
+
+            for (int i = 0; i < arrayVanIntegers.Length; i++)
+                arrayVanIntegers[i] = r.Next(onderInclusief, bovenInclusief + 1);
+
+        }
 
     }
 }

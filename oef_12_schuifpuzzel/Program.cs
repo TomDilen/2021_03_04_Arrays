@@ -27,6 +27,7 @@ namespace oef_12_schuifpuzzel
             int aantalShuffles;
             int delayTssShuffles;
 
+            
 
             while (true)
             {
@@ -35,7 +36,11 @@ namespace oef_12_schuifpuzzel
 
                 cols = 3; rows = 3; aantalShuffles = 1; delayTssShuffles = 20;
 
-                Console.WriteLine("OPGELET, input wordt nog niet gevalideerd!\n");
+                Console.WriteLine("OPGELET, input wordt nog niet gevalideerd!");
+                Console.WriteLine("hoe kleiner je het font zet hoe meer rijen en kolommen je kan gebruiken");
+                Console.WriteLine("de app getest met fontgrootte 16, de onderstaand kolom en rij maximums geven geen probleem");
+                Console.WriteLine("indien de kolommen of rijen te groot zijn dan cracht het program, begin opnieuw met een kleiner");
+                Console.WriteLine("font of een kleinere waarde voor kolommen of rijen.\n");
 
 
                 Console.Write("geef het aantal kolommen (3-20): ");

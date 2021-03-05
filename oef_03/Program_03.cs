@@ -32,7 +32,6 @@ namespace oef_03
             Console.WriteLine();
 
 
-
             //----------------------------------------------------------------------------
             Console.WriteLine();
             Console.WriteLine("druk een toets om af te sluiten");
