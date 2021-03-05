@@ -47,7 +47,7 @@ namespace oef_12_schuifpuzzel
                 cols = Convert.ToInt32(Console.ReadLine());
                 Console.Write("geef het aantal rijen (3-14): ");
                 rows = Convert.ToInt32(Console.ReadLine());
-                Console.Write("geef het aantal shuffles (1-∞): ");
+                Console.Write($"geef het aantal shuffles (1-{Int32.MaxValue}): ");
                 aantalShuffles = Convert.ToInt32(Console.ReadLine());
                 Console.Write("geef een delay milliseconden tss shuffels (0=geen): ");
                 delayTssShuffles = Convert.ToInt32(Console.ReadLine());
