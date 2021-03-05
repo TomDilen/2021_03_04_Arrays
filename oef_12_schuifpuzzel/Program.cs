@@ -16,8 +16,6 @@ namespace oef_12_schuifpuzzel
         const ConsoleColor KLEUR_EVEN_STUKJE = ConsoleColor.Red;
         const ConsoleColor KLEUR_LEEGVAKJE = ConsoleColor.Black;
 
-        //const int DELAY_TSS_SHUFFLE = 200;
-
 
         static void Main(string[] args)
         {
@@ -34,13 +32,14 @@ namespace oef_12_schuifpuzzel
                 Console.Clear();
                 //----------------------------------------------------------keuzemenu
 
-                cols = 3; rows = 3; aantalShuffles = 1; delayTssShuffles = 20;
+                //cols = 3; rows = 3; aantalShuffles = 1; delayTssShuffles = 20;
 
-                Console.WriteLine("OPGELET, input wordt nog niet gevalideerd!");
-                Console.WriteLine("hoe kleiner je het font zet hoe meer rijen en kolommen je kan gebruiken");
-                Console.WriteLine("de app getest met fontgrootte 16, de onderstaand kolom en rij maximums geven geen probleem");
-                Console.WriteLine("indien de kolommen of rijen te groot zijn dan cracht het program, begin opnieuw met een kleiner");
-                Console.WriteLine("font of een kleinere waarde voor kolommen of rijen.\n");
+                Console.WriteLine("OPGELET, input wordt nog niet gevalideerd in dit venster!");
+                Console.WriteLine("hoe kleiner je het font zet hoe meer rijen en kolommen je kan gebruiken :-)");
+                Console.WriteLine("de app getest met fontgrootte 16, de onderstaande kolom en rij maximums gaven dan geen probleem");
+                Console.WriteLine("indien de kolommen of rijen te groot zijn dan cracht het programma, begin opnieuw met een kleiner");
+                Console.WriteLine("font of een kleinere waarde voor kolommen of rijen.");
+                Console.WriteLine("Enjoy :-)\n");
 
 
                 Console.Write("geef het aantal kolommen (3-20): ");
@@ -199,7 +198,7 @@ namespace oef_12_schuifpuzzel
                 for (int x = 0; x < aSpeelveld.GetLength(0); x++)
                     if (aWaardeTeSchuivenPuzzelStukje == aSpeelveld[x, y])
                     {
-                        //dit is het lege vlakje
+                        //dit is het te verschuiven vlakje
                         xTeVerschuivenPuzzelstukje = x;
                         yTeVerschuivenPuzzelstukje = y;
                         break;
